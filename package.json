@@ -1,0 +1,49 @@
+{
+  "name": "material-ui-api-exposer",
+  "author": "Mattori Birnbaum",
+  "version": "0.1.0",
+  "description": "Simple script to expose MaterialUI components to the global window context using Browserify.",
+  "scripts": {
+    "build": "browserify index.js -t babelify --extension=jsx -s MaterialUI -o lib/material-ui.js"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "material design",
+    "material-ui",
+    "material ui"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "inline-style-prefixer": "^0.6.6",
+    "lodash.merge": "^4.0.1",
+    "lodash.throttle": "^4.0.0",
+    "react-addons-create-fragment": "^0.14.0",
+    "react-addons-pure-render-mixin": "^0.14.0",
+    "react-addons-transition-group": "^0.14.0",
+    "react-addons-update": "^0.14.0",
+    "warning": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-tap-event-plugin": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-dev-warning": "^0.1.0",
+    "babel-plugin-transform-react-constant-elements": "^6.3.13",
+    "babel-plugin-transform-react-inline-elements": "^6.3.13",
+    "babel-plugin-transform-react-remove-prop-types": "^0.1.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
+    "babelify": "^7.2.0",
+    "react": "^0.14.0",
+    "react-addons-test-utils": "^0.14.3",
+    "react-dom": "^0.14.0",
+    "react-tap-event-plugin": "^0.2.0",
+    "recursive-readdir-sync": "^1.0.6"
+  }
+}
